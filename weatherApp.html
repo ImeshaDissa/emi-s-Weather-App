@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emi's Weather App</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script> <!--a js library to display date and time of user-->
+</head>
+<body>
+    
+    <div class = "container"> 
+        <div class="content">
+            <h1>Emi's Weather App</h1>
+            <input class="input" id="input" type="text" placeholder="City Name" />
+        </div>
+        <div class="main-weather">
+            <p id="date">Date</p>
+            <p id="city">City</p>
+            <p class="temp" id="temp">Temp</p>
+            <p id="min-max">Min and Max Temperature</p>
+            <p id="weather-type">Sunny</p> 
+            <img id="weather-icon" alt="Weather Icon" /><!--icon-->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
