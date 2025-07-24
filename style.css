@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #23313e ;
   padding: 0 4.5em 10em;
   margin: 1em auto 0 auto;
   -webkit-filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
@@ -37,7 +37,7 @@ h1 {
   line-height: 2.2rem;
   height: 30vh;
   text-align: center;
-  color: #23313e;
+  color: #fff ;
   font-weight: bold;
 }
 
