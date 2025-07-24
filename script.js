@@ -13,6 +13,7 @@ Input.addEventListener('keydown', (event) => {
     }
 });
 
+
 function getWeather(city) {
     // Fetch current weather
     fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)
