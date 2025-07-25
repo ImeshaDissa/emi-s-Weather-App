@@ -53,3 +53,17 @@ h1 {
   height: 90px;
   filter: drop-shadow(0 1em 1em rgba(0, 0, 0, 0.1));
 }
+
+
+#searchBtn {
+  margin: 1em auto 0 auto;
+  padding: 5px;
+  width: 100px;
+  outline: none;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  border: 2.5px solid #0b517f; 
+  border-radius: 15px;
+}

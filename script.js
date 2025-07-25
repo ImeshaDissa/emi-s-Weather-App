@@ -4,17 +4,33 @@ const api = {
   forecast: 'https://api.openweathermap.org/data/2.5/forecast?'
 };
 
+const form = document.getElementById('weather');
 const Input = document.getElementById('input');
 
+form.addEventListener('submit',(event) => {
+    event.preventDefault(); // prevent reload since it an input btn
+
+    const city = input.value.trim();
+    if (!city) {
+        alert('Please enter a city name');
+        return;
+    }
+
+    getWeather(city);
+
+});
+
+/*
 Input.addEventListener('keydown', (event) => {
     if (event.key === 'Enter') {
         getWeather(Input.value);
         document.querySelector('.main-weather').style.display = 'block';
     }
 });
-
+*/
 
 function getWeather(city) {
+
     // Fetch current weather
     fetch(`${api.base}q=${city}&appid=${api.key}&units=metric`)
     .then((res) => res.json())
@@ -24,8 +40,9 @@ function getWeather(city) {
             return;
         }
         showWeather(details);
+        document.querySelector('.main-weather').style.display = 'block';
 
-        // Fetch forecast to get min/max temps
+        // Fetch forecast to get min max temps
         return fetch(`${api.forecast}q=${city}&appid=${api.key}&units=metric`);
     })
     .then((res) => res.json())
